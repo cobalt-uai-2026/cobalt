@@ -1,6 +1,6 @@
 # Censored Regressors
 
-A robust library for **Censored Gaussian Process Regression** (Tobit Model). This package provides custom likelihoods and probability distributions to handle left, right, and interval-censored data across major Gaussian Process frameworks.
+This is a robust library for **Censored Gaussian Process Regression** (Tobit Model). This package provides custom likelihoods and probability distributions to handle left, right, and interval-censored data across major Gaussian Process frameworks.
 
 It is designed to be numerically stable even in extreme tail regions (deep censoring) by using log-space arithmetic (`log_ndtr`) and Gauss-Hermite quadrature for variational integration.
 
