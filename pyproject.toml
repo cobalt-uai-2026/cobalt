@@ -1,0 +1,40 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "censored_regressors"
+version = "0.1.0"
+description = "A package for censored regression models"
+readme = "README.md"
+authors = [
+  { name="Bayesian Optimization for Censored Data", email="cobalt.uai.2026@gmail.com" },
+]
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "numpy",
+    "pandas",
+    "scikit-learn",
+    "GPy",
+    "torch",
+    "gpytorch",
+    "pyro"
+    # Add other libraries your code uses here
+]
+
+[project.urls]
+"Homepage" = "https://github.com/cobalt-uai-2026/"
+
+[tool.setuptools.package-dir]
+"" = "src"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+"censored_regressors.data" = ["*.csv", "*.npy", "*.data"]
